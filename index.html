@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Name of the website-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,16 +10,25 @@
     <link rel="stylesheet" href="styler.css" />
   </head>
 
+  <!--body is the main part of the website-->
   <body>
+      <!--Header/Main heading starts at top of the website-->
     <main class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
+      <!--header/Main heading is finished-->
 
+      <!--card class starts-->
       <section class="card">
+
+        <!--card header starts-->
         <section class="card-header">
           <h2>Generate a Password</h2>
         </section>
+        <!--card header finished-->
+
+        <!--card class body starts-->
         <section class="card-body">
           <textarea
             readonly
@@ -26,13 +37,24 @@
             aria-label="Generated Password"
           ></textarea>
         </section>
+        <!--card class body finished-->
+
+        <!--card class footer starts-->
         <section class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </section>
+        <!--card class footer finishes-->
+
       </section>
+      <!--card class finished-->
+
     </main>
+    <!--Header/Main heading ends at the bottom of the website-->
 
+    <!--Javascript file is added to the HTML file-->
     <script src="script.js"></script>
-  </body>
 
+  </body>
+  <!--body finishes-->
 </html>
+<!--HTML finishes-->
