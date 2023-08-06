@@ -1,3 +1,5 @@
+
+//function that starts the generate password process
 function generatePassword() {
 
 //const are never changing and are used to make a random password.
@@ -6,12 +8,13 @@ const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numeric = '0123456789';
 const specialChar = '!@#$%^&*()_+{}[]|;:<>,.?/~'
 
-//charset needs to be an empty string so that you can put the const's in it to provide the 
+//charset needs to be an empty string so that you can put the const's in it to provide the password with what they have picked.
 var  charset = "";
+
+
 
 let password = "";
 var passwordLength;
-
 
 //created function to ask the user to input a certain number of charcters they want their password to be. if they pick not in the expected range the fuction will restart and ask again until they pick in between them.
 showPromt();
