@@ -1,9 +1,12 @@
+
+/* The * symbol applies to all elements in the document. */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/*Makes the website height.*/
 html,
 body,
 .wrapper {
@@ -12,17 +15,20 @@ body,
   padding: 0;
 }
 
+/*Body recieves color and font style*/
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
 
+/*wrapper class creates space*/
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
+/*header gets aligned to be center in the main*/
 header {
   text-align: center;
   padding: 20px;
@@ -30,6 +36,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/*card class color and specs are set. */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -42,6 +49,7 @@ header {
   padding: 30px 40px;
 }
 
+/*card id header has specs set to it*/
 .card-header::after {
   content: " ";
   display: block;
@@ -50,14 +58,17 @@ header {
   height: 2px;
 }
 
+/*card body id sets height*/
 .card-body {
   min-height: 100px;
 }
 
+/* card footer id sets alignment*/
 .card-footer {
   text-align: center;
 }
 
+/*card id footer sets specs before it*/
 .card-footer::before {
   content: " ";
   display: block;
@@ -66,12 +77,14 @@ header {
   height: 2px;
 }
 
+/*card id footer sets specs after it*/
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
 
+/*class button sets parameters for it.*/
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -88,15 +101,18 @@ header {
   cursor: pointer;
 }
 
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
+
 .float-right {
   float: right;
 }
 
+/* password id sets specs for it.*/
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -118,6 +134,7 @@ button[disabled] {
   overflow: hidden;
 }
 
+/*media quaries are used to make sure that the viewport is available on all devices, as the diplay adjusts to different sizes.*/
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
